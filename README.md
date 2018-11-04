@@ -45,6 +45,9 @@ nj: 南京,
 - 运行，python ershou.py 根据提示输入城市代码，回车确认，开始采集数据到csv文件
 - 运行，python ershou.py city，自动开始采集数据到csv文件
 
+- MySQL数据库结构可以通过导入tool/lianjia_ershou.sql建立。
+- python ershou_to_mysql.py 根据提示将今天采集到的csv数据存入MySQL数据库。
+- 二手房数据的整理使用ershou_format_etl.sql
 
 ## 出租房数据爬取
 - 获取链家网挂牌出租房数据，数据格式如下：
@@ -90,6 +93,7 @@ Total cost 29.757128953933716 second
 
 
 ### 更新记录
+- 2018/11/04 增加二手房数据导入到MySQL数据库
 - 2018/11/01 增加二手房缩略图地址
 - 2018/10/28 xiaoqu_to_db.py改造成支持命令行参数自动运行。
 - 2018/10/25 将主要爬取代码抽取到spider类中。
